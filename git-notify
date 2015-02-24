@@ -22,7 +22,7 @@ while [ 1 ]; do
 
     # get the latest revision SHA.
     # current_revision=`git rev-parse $branch`
-	current_revision=`git ls-remote --heads $repository $branch | tail -n 1`
+	current_revision=`git ls-remote --heads $repository $branch | tail -n 1 | cut -f1`
 
     # if we haven't seen that one yet, then we know there's new stuff.
     if [ $latest_revision != $current_revision ]; then
