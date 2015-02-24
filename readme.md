@@ -1,6 +1,11 @@
 git-notify
 ========
 
+Slighty tweaked version of @jakeonrails git-notify. Output message style is different and now includes a `say` command as well. 
+
+Original readme is below:
+---
+
 This little bash script will watch your origin/master for updates every 60 seconds and uses notify-send to alert you of new commits.
 
 I asked [this question](http://stackoverflow.com/questions/5082001/is-there-a-tool-to-watch-a-remote-git-repository-on-ubuntu-and-do-popup-notificat) on StackOverflow to find out if there was a tool to notify me of commits to remote git repositories, and the answer came back no!
